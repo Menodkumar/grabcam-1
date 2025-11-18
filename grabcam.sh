@@ -125,7 +125,7 @@ $(which sh) -c 'ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=60 -R 80:
 sleep 8
 fi
 printf "\e[1;77m[\e[0m\e[1;33m+\e[0m\e[1;77m] Starting php server... (localhost:3333)\e[0m\n"
-fuser -k 3333/tcp > /dev/null 2>&1
+lsof -ti:3333 | xargs kill > /dev/null 2>&1
 php -S localhost:3333 > /dev/null 2>&1 &
 sleep 3
 send_link=$(grep -o "https://[0-9a-z]*\.serveo.net" sendlink)
