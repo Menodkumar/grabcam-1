@@ -8,6 +8,7 @@ clear
 termux-setup-storage
 pkg install php -y
 pkg install wget -y
+pkg install lsof -y
 clear
 trap 'printf "\n";stop' 2
 
@@ -24,12 +25,14 @@ echo '
              ___  ____   __   ____   ___   __   _  _ 
             / __)(  _ \ / _\ (  _ \ / __) / _\ ( \/ )
            ( (_ \ )   //    \ ) _ (( (__ /    \/ \/ \
-            \___/(__\_)\_/\_/(____/ \___)\_/\_/\_)(_& v1.1 ' |lolcat
+            \___/(__\_)\_/\_/(____/ \___)\_/\_/\_)(_& v1.2 ' |lolcat
 
                                                                                
 echo " "
 printf "      \e[1;77m v1.0 coded by github.com/thelinuxchoice/saycheese\e[0m \n"
 printf "          \e[1;77m v1.1 This reborn script by { Noob Hackers }\e[0m \n"
+printf "          \e[1;77m v1.2 Updated and made it run smoothly in termux by { Menodkumar }\e[0m \n"
+printf "          \e[1;77m v1.2 Disclaimer: This tool is for educational use only. The developer and moderators are not responsible for any misuse or consequences.\e[0m \n"
 
 printf "\n"
 
